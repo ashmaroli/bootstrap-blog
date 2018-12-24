@@ -1,3 +1,1 @@
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ post.video | default: page.video }}?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
+<div class="embed-responsive embed-responsive-16by9 lazyframe" data-vendor="youtube" data-src="https://www.youtube.com/embed/{{ post.video | default: page.video }}?rel=0" data-ratio="16:9"></div>
