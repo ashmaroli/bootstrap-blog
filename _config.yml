@@ -11,7 +11,7 @@ permalink:          pretty
 # Gems
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-redirect-from
   - jekyll-sitemap
 
@@ -31,7 +31,15 @@ port:               4000
 #baseurl:            ""
 encoding:           UTF-8
 
-paginate:           5
+pagination:
+  enabled:          true
+  per_page:         5
+  permalink:        "/page:num/"
+  title:            "Page :num of :max"
+  limit:            0
+  sort_field:       "date"
+  sort_reverse:     true
+
 future:             true
 
 exclude:
